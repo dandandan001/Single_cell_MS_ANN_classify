@@ -122,7 +122,7 @@ data.loc[data['Group'] == 7, 'Prediction'] = pred_H
 
 
 # Save results with group mappings for clarity
-results_dir = '102824_train_all_cell_lines'
+results_dir = 'Output_folder' #change it to any name you like
 os.makedirs(results_dir, exist_ok=True)
 data.to_csv(os.path.join(results_dir, 'predictions.csv'), index=False)
 with open(os.path.join(results_dir, 'results.csv'), 'w') as f:
