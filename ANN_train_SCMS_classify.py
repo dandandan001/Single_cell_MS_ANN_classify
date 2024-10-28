@@ -12,7 +12,7 @@ import os
 import matplotlib.pyplot as plt
 
 # Load and preprocess data
-data = pd.read_csv('combined_cell_lines.csv')
+data = pd.read_csv('combined_cell_lines.csv') # change the file name as your own file
 data.columns = data.columns.str.strip()
 data = data.dropna()
 
